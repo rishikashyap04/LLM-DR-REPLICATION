@@ -11,12 +11,7 @@ Pipeline
                            rule baselines (nearest / highest fee / fee-per-km / persona heuristic)
   4. Evaluation          : Table-I style delivery metrics + JSD / Wasserstein / KS vs empirical
 
-Deviations from the paper (be upfront about these when presenting):
-  * Routing: Amap cycling API (cached) if AMAP_KEY is set, else haversine * CIRCUITY / SPEED.
-  * Persona features are computed from order records only (no reconstructed waves).
-  * LLM is an open-weight model, so numbers will NOT match the paper exactly.
-  * If no real data file is given, a synthetic Beijing-like dataset is generated so the
-    code runs end to end (results on synthetic data are only a software check).
+
 
 Usage
   python llm_dr.py --policy nearest                       # synthetic data, baseline
