@@ -11,18 +11,6 @@ The notebook rebuilds four rider personas from real data, simulates a dispatch p
 | `LLM_DR_replication.ipynb` | The notebook. Run the cells top to bottom. It writes `llm_dr.py` itself, so it is self-contained. |
 | `llm_dr.py` | The simulator, personas, baselines, LLM policy and validation code (the same file the notebook writes). |
 
-## Requirements
-
-- Kaggle notebook with **GPU T4 x2** and **Internet ON** (needed for `pip`, `git clone` and downloading the model). A local machine needs a GPU able to serve a 7B 4-bit model with vLLM.
-- About **1.5 hours** in total; the LLM run alone is about 50 minutes.
-- No API key is needed. The model runs locally through vLLM.
-
-## How to run
-
-1. Open `LLM_DR_replication.ipynb` on Kaggle, set the accelerator to GPU T4 x2 and Internet to ON.
-2. Run the cells in order, from Section 0 to Section 6. Keep the tab open during the LLM run.
-3. After Section 4 finishes, run Section 5 for the results and Section 6 to zip them.
-4. Download `results_backup.zip` before the session ends. Files in `/kaggle/working` are deleted when the session resets.
 
 | Section | What it does |
 |---|---|
